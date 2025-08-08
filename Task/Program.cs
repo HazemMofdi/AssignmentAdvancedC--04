@@ -29,6 +29,11 @@
                                 Console.Write("Enter The Second Number: ");
                                 if (int.TryParse(Console.ReadLine(), out num2))
                                 {
+                                    if (op == '/' && num2 == 0)
+                                    {
+                                        Console.WriteLine("Second number cannot be zero for division. Try again.");
+                                        continue;
+                                    }
                                     isTrue3 = true;
                                 }
                             }
